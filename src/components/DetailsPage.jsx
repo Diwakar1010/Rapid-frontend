@@ -1,5 +1,5 @@
 import addDays from 'date-fns/addDays'
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom";
 import '../styles/DetailsPage.css'
 import React from 'react';
@@ -12,6 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 const DetailsPage = () => {
+    const his = useNavigate()
     const location = useLocation()
     const { state_name, dist_name, car_name, price_value } = location.state
     const [startDate, setStartDate] = useState(new Date());
@@ -44,7 +45,7 @@ const DetailsPage = () => {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                   }).then(()=>{
-                    window.location = "/"
+                    his("/") 
                   })
             }
         }).catch((err)=>{
@@ -56,7 +57,7 @@ const DetailsPage = () => {
         localStorage.removeItem("jwtoken")
         localStorage.removeItem("name")
         // localStorage.removeItem("email")
-        window.location = "/"
+         his("/")
     }
 
     return ( 

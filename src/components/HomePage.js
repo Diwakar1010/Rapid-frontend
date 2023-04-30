@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/HomePage.css"
 import logo from "../images/logo.jpg"
 import { useState } from "react";
@@ -7,6 +7,7 @@ import BookPage from "./BookPage";
 
 
 const HomePage = () => {
+    const his = useNavigate()
     const [beLogin, setBeLogin] = useState('')
     const [card, setCard] = useState(false)
 
@@ -16,7 +17,7 @@ const HomePage = () => {
     const logout = () => {
         localStorage.removeItem("jwtoken")
         localStorage.removeItem("name")
-        window.location = "/"
+         his("/")
     }
     return (
         <>

@@ -1,11 +1,12 @@
 import { useState } from "react"
 import "../styles/RegisterPage.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import logo from "../images/logo.jpg"
 
 
 
 const RegisterPage = () => {
+    const his = useNavigate()
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -29,7 +30,7 @@ const RegisterPage = () => {
             if (data.status === "success") {
                 // localStorage.setItem("name1",data.userData.name)
                 // localStorage.setItem("email",data.userData.email)
-                window.location = "/login"
+                 his("/login")
             }
         })
     }

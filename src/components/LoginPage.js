@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "../styles/LoginPage.css"
 import logo from "../images/logo.jpg"
 
 
 
 const LoginPage = () => {
+    const his = useNavigate()
     const [lemail, setLemail] = useState("")
     const [lpass, setLpass] = useState("")
     // const [val,setVal]= useState("")
@@ -28,7 +29,7 @@ const LoginPage = () => {
                 localStorage.setItem("name",data.user_name)
             }
             if(data.token ){
-                window.location="/"
+                his("/")
             }
         })
     }
