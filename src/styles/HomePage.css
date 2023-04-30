@@ -1,0 +1,111 @@
+#root {
+    height: 640px;
+    overflow: hidden;
+    background: url('../images/carback.png') 100%/cover;
+}
+
+.homecontainer {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    /* padding-top: 20px; */
+    color: #564caf;
+    backdrop-filter: blur(8px);
+}
+
+span {
+    color: #564caf;
+}
+
+
+h2 {
+
+    font-size: 30px;
+}
+
+.sidetitle {
+    color: #564caf;
+    font-size: 50px;
+}
+
+.rightcontainer {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    right: 0;
+    backdrop-filter: blur(6px);
+}
+
+.centered {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centeredRight {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3 {
+    display: inline;
+    color: white;
+    float: left;
+    font-style: italic;
+}
+
+.logosec {
+    position: relative;
+    left: 60px;
+}
+
+.homereg-link2 {
+    display: inline-block;
+    background-color: hsl(210, 33%, 99%);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(218, 30, 30);
+}
+
+.homereg-link {
+    display: inline-block;
+    background-color: #f3f6f8;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(218, 30, 30);
+}
+
+.title {
+    color: #564caf;
+    font-size: 100px;
+    /* margin-top: 80px; */
+}
+
+
+.bookBtn {
+    background-color: #564caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 35%;
+}
+
+#alertmsg {
+    color: red;
+    font-size: 30px;
+}
+

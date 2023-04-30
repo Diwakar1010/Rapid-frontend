@@ -1,0 +1,101 @@
+#states-name {
+    width: 230px;
+    padding: 10px;
+    background-color: #564caf;
+    border: none;
+    border-radius: 6px;
+    color: whitesmoke;
+}
+
+#dist-name {
+    display: inline;
+    width: 230px;
+    padding: 10px;
+    background-color: #564caf;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.btn_sd {
+    background-color: #564caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 45px;
+    cursor: pointer;
+    border-radius: 35%;
+    margin-top: 60px;
+}
+
+.card2 {
+    width: 50%;
+    height: 350px;
+    margin: 25%;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #f2f2f2;
+    position: fixed;
+    z-index: 2;
+    border: 3px solid #564caf;
+    border-radius: 20px;
+}
+
+.card3 {
+    width: 90%;
+    height: 275px;
+    /* margin: 35% ; */
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    /* position: fixed; */
+    z-index: 2;
+    border: 3px solid #564caf;
+    border-radius: 20px;
+}
+
+.card-titles {
+    color: #564caf;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.bars {
+    margin-top: 50px;
+}
+
+/* .card{
+    z-index:2;
+    margin-top: 20px;
+} */
+
+
+.card-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* margin-left: 10px; */
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 20px ;
+    height: 150px; ;
+}
+.btn_link{
+    background-color: #564caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 45px;
+    cursor: pointer;
+    border-radius: 35%;
+    margin-top: 20px;
+}
